@@ -12,9 +12,9 @@ class Question
         $this->title = $title;
     }
 
-    public function addAnswer(Answer $answer) : void
+    public function addAnswer(Answer $answer) : void // On attends un objet de type Answer;
     {
-        $this->answers[] = $answer;
+        $this->answers[] = $answer; // On stock l'objet dans le tableau answers[]; donc on aura que des objets de type Answer dans answers[]
     }
 
     public function setExplanation($explanation) : void
